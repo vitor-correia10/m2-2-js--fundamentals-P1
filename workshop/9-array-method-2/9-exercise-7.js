@@ -3,12 +3,14 @@
 
 // You will also need to verify that your functions work as expected. Be sure to test them. :)
 
-// Q4
-// Write a function that accepts a list of numbers and returns a new list with
-// all of the even numbers removed.
-function removeEvens(lst) {
+// Q7
+// Only greet people who's names have length at least 4.
+// Otherwise ignore them completely.
+// For example: greeLong(["bob", "daniel"]) returns ["Hello daniel"]
+  
+function greetLong(lst) {
     // lst is an array of strings
 
 }
 // -------------------------------------------------------------------------
-console.log('Q4 removeEvens()', removeEvens([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]));
+console.log('Q7 greetLong()', greetLong(['Scott', 'Bob', 'Ric', 'Jim']));

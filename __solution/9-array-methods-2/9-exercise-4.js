@@ -7,40 +7,11 @@
 // Write a function that accepts a list of numbers and returns a new list with
 // all of the even numbers removed.
 function removeEvens(lst) {
-    // lst is an array of numbers.
+    const evens = lst.filter(function(number) {
+        return number % 2 !== 0;
+    });
 
+    return evens;
 }
-
-// Q5
-// Returns a new list with all the elements of lst that are length greater than 5
-function keepLong(lst) {
-    // lst is an array of strings
-
-}
-
-// Q6
-// Adds "Hello " to every element of greet
-// For example: greet(["bob", "eric"]) returns ["Hello bob", "Hello eric"]
-
-function greet(lst) {
-    // lst is an array of strings
-
-}
-
-// Q7
-// Only greet people who's names have length at least 4.
-// Otherwise ignore them completely.
-// For example: greeLong(["bob", "daniel"]) returns ["Hello daniel"]
-  
-function greetLong(lst) {
-    // lst is an array of strings
-    
-}
-  
-// Q8
-// Returns true if every element of lst is of length at least 5.
-// Otherwise returns false.
-function allLong(lst) {
-    // lst is an array of strings
-
-}
+// -------------------------------------------------------------------------
+console.log('Q4 removeEvens()', removeEvens([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]));

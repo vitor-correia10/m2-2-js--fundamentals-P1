@@ -1,0 +1,26 @@
+{
+	"name": "wksp-module-2-js-2-fundamentals",
+	"version": "1.0.0",
+	"description": "JS fundamentals workshop",
+	"main": "index.js",
+	"scripts": {
+		"test": "jest"
+	},
+	"jest": {
+		"rootDirectory": ".",
+		"testRegex": "./__tests/.*.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/journey-education/wksp-module-2-js-2-fundamentals.git"
+	},
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/journey-education/wksp-module-2-js-2-fundamentals/issues"
+	},
+	"homepage": "https://github.com/journey-education/wksp-module-2-js-2-fundamentals#readme",
+	"devDependencies": {
+		"jest": "^25.1.0"
+	}
+}

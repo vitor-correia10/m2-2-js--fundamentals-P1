@@ -64,29 +64,25 @@ for (let i = 0; i < ricksayingArray.length; i++) {
 console.log(`A4) There are ${characters} characters in rickSaying`);
 
 // Q5
-// Morty doesn't actually have a middle name. Console Morty's name without "Antoine".
+// It turns out, Morty doesn't actually have a middle name. The `grandson`
+// string is wrong! Console Morty's name without "Antoine".
 console.log(`A5) ${mortyNamesArray[0]} ${mortyNamesArray[2]}`); //without string methods
 
 const actualMortyName = grandson.replace('Antoine ', ''); //include one of the spaces
 console.log(`A5) ${actualMortyName}`);
 
 // Q6
-// How many digits are there in moneyBag?
-//Hacky way since to toString() returns a scientific notation for extremely large values
-const digits = moneyBag.toString().split('e+'); //split on the power
-console.log('A6)', parseInt(digits[1]) + 1); //add 1 to power to get no of digits
+// Scary Terry is actually not an enemy. Remove him from the list and console only Rick's true enemies.
 
-// Q7
-// Decode and console. the secret!
+let actualEnemies = enemies.replace('Scary Terry, ', '');
+console.log('A6)', actualEnemies);
 
-// To do so, you will need to remove all of the notCode words.
+// Q7 (STRETCH)
+// `secret` is an encrypted message! Let's see if we can figure out what it
+// says. To decode the message, you'll need to remove any words that are found
+// in the "notCode" array.
 let decodedMsg = secret;
 for (let i = 0; i < notCode.length; i++) {
   decodedMsg = decodedMsg.replace(notCode[i], '');
 }
 console.log('A7)', decodedMsg);
-
-// Q8 (challenge)
-// Scary Terry is actually not an enemy. Remove him from the list and console only Rick's true enemies.
-let actualEnemies = enemies.replace('Scary Terry, ', '');
-console.log('A8)', actualEnemies);

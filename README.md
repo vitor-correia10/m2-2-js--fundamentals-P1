@@ -9,7 +9,7 @@ You can toggle the terminal window in VS Code with the following keyboard shortc
 - `[ctrl + j]` on Windows
 - `[cmd + j]` on Mac
 
-This will open an instance of the terminal (Mac) or the PowerShell (Win). 
+This will open an instance of the terminal.
 
 There are 2 ways to evaluate your JS using Node:
 
@@ -27,7 +27,7 @@ To exit/quit Node and get back to the terminal, do `[ctrl + c]` twice.
 
 ### Use Node to execute files
 
-To run your exercise files, you will need to type the following command at the terminal/PowerShell prompt:
+To run your exercise files, you will need to type the following command at the terminal prompt:
 
 ```js
 node <PATH TO FILE>
@@ -36,5 +36,3 @@ node <PATH TO FILE>
 The _easiest_ way to do this is to type `node`, hit [space] and then drag the file you want to evaluate into the terminal. This will place the path into the command line.
 
 Alternatively, you can navigate to the right folder using `cd` and then you could type `node <FILE_NAME>`.
-
-

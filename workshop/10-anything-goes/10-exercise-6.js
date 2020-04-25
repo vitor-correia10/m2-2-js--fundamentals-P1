@@ -1,7 +1,7 @@
 // Q6
 // Take the code you wrote in Q5 and now let's create a
 // reusable function that takes two arguments,
-// numbers that dictate the range within which to look for 
+// numbers that dictate the range within which to look for
 // Armstrong numbers.
 
 // This means that our code from the previous question will need to be tweaked a little
@@ -16,8 +16,6 @@
 // See this site for a list of "narcissistic" numbers
 // http://mathworld.wolfram.com/NarcissisticNumber.html
 
-function identifyArmstrongNumbers(num1, num2) {
-
-}
+function identifyArmstrongNumbers(num1, num2) {}
 
 console.log(identifyArmstrongNumbers(100, 99999));

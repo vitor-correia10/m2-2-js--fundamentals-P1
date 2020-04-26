@@ -16,5 +16,5 @@ const myArray = [
   'funky',
 ];
 
-console.log(myArray, 'funky'); // true
-console.log(myArray, 'elephant'); // false
+console.log(itemIsPresent(myArray, 'funky')); // true
+console.log(itemIsPresent(myArray, 'elephant')); // false

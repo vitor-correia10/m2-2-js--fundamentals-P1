@@ -11,9 +11,29 @@
 // Rewrite countBs to make use of this new function.
 
 function countChar(str, char) {
+    let letter = str.split(char);
+    let count = 0;
 
-
+    for (let i = 0; i < letter.length; i++){
+        if (letter[i] === char) {
+            count++;
+        }
+    }
+    return count;
 }
+
+// -------------------------------------------------------------------------
+console.log('Q2: ', countChar('BananaBabyBubbles', 'u'));
+console.log('Q2: ', countChar('BananaBabyBubbles', 'a'));
+console.log('Q2: ', countChar('BananaBabyBubbles', 'Z'));
+
+// 2 - Answer
+
+function countChar(str, char) {
+    let letter = str.split(char).length-1
+   
+    return letter
+   }
 // -------------------------------------------------------------------------
 console.log('Q2: ', countChar('BananaBabyBubbles', 'u'));
 console.log('Q2: ', countChar('BananaBabyBubbles', 'a'));

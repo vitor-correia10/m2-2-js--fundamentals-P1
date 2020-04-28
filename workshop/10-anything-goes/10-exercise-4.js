@@ -5,7 +5,11 @@
 // Hint: consider using .filter(), .indexOf() and .lastIndexOf()
 
 function filterNonUnique(array) {
+    let newArray = array.filter(function(number){
+        return array.indexOf(number) === array.lastIndexOf(number);
+    });
 
+    return newArray;
 }
 
 console.log(filterNonUnique([1,2,3,3,4,5,6,7,7,8]));

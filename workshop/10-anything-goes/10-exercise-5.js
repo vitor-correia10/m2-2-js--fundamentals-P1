@@ -14,5 +14,15 @@
 let armstrongNumbers = [];
 
 // write your loop here...
-
+for (i = 0; i <= 999; i++) {
+    let digit = i.toString().split('');
+    let sum = 0;
+    for (x = 0; x < digit.length; x++) {
+        let num = Number(digit[x]);
+        sum += num ** 3;
+    }
+    if (sum === i) {
+        armstrongNumbers.push(i);
+    }
+}
 console.log(armstrongNumbers);

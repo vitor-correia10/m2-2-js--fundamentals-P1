@@ -50,6 +50,8 @@ console.log(`A1) Morty has ${numberOfNames} names`);
 // Q2
 // Convert the alternateRicks string to an array, so that each name ("Simple
 // Rick") is an element in that array. Log that array to the console.
+  let rickNames = alternateRicks.split(", ");
+  console.log('A2) ', rickNames);
 
 //
 //
@@ -59,12 +61,33 @@ console.log(`A1) Morty has ${numberOfNames} names`);
 // How many Ricks have been named in alternateRicks?
 // HINT: There are multiple ways to solve this one. Maybe try a `for` loop!
 
+const alternateRicks =
+  'Simple Rick, Slow Rick, Tall Rick, Cop Rick, Doofus Rick, Past Rick, Replacement Rick, Insurance Rick, Sales Rick, Supervisor Rick, Cool Rick, Cowboy Rick, Tiny Rick, Cronenberg Rick, Teacher Rick, Farmer Rick, Future Rick, Rick J22, Evil Rick, Toxic Rick, Crunk Rick, Pickle Rick, The Scientist Formerly Known as Rick, Rick C-137, Evil Morty, Vitor Correia';
+
+  let rickNames = alternateRicks.split(", ");
+  console.log('rickNames', rickNames);
+
+  let countRicks = 0;
+
+  for (let i = 0; i < rickNames.length; i++) {
+    // console.log('i',i)
+    if (rickNames[i].includes("Rick")) {
+      countRicks++;
+    } else {
+      console.log('not Rick ->', rickNames[i]);
+    }
+  }
+  console.log('A3) ', countRicks)
+
 //
 //
 //
 //
 // Q4
 // How many characters are there in rickSaying (without spaces)?
+
+const rickSaying = 'wubba lubba dub dub';
+console.log('A4) ', rickSaying.replace(/ +/g, '').length);
 
 //
 //
@@ -74,12 +97,22 @@ console.log(`A1) Morty has ${numberOfNames} names`);
 // It turns out, Morty doesn't actually have a middle name. The `grandson`
 // string is wrong! Console Morty's name without "Antoine".
 
+const grandson = 'Morty Antoine Smith';
+let newGrandsonName = grandson.replace('Antoine ', '');
+console.log('A5) ', newGrandsonName);
+
+
 //
 //
 //
 //
 // Q6
 // Scary Terry is actually not an enemy. Remove him from the list and console only Rick's true enemies.
+const enemies =
+  'Tammy Gueterman, Evil Morty, Zeep Xanflorp, Galactic Federation, Council of Ricks, Phoenixperson, Scary Terry, Abradolf Lincler, Supernova';
+
+  let trueEnemiers = enemies.replace ('Scary Terry,', '');
+  console.log('A6) ', trueEnemiers)
 
 //
 //
@@ -89,6 +122,27 @@ console.log(`A1) Morty has ${numberOfNames} names`);
 // `secret` is an encrypted message! Let's see if we can figure out what it
 // says. To decode the message, you'll need to remove any words that are found
 // in the "notCode" array.
+
+const secret =
+  "summerlobaconokfamily ascaryt mintergalactice, I'jerrym Pimortybethckle Rick!";
+const notCode = [
+  'summer',
+  'bacon',
+  'scary',
+  'intergalactic',
+  'jerry',
+  'morty',
+  'beth',
+  'family',
+];
+
+let secretMessage = secret;
+
+for (let i = 0; i < notCode.length; i++) {
+  secretMessage = secretMessage.replace(notCode[i], '');
+}
+console.log('A7)', secretMessage)
+
 //
 // For example:
 //   IF secret was `bluehired`

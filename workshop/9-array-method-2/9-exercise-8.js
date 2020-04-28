@@ -13,6 +13,14 @@
 // Otherwise returns false.
 function allLong(lst) {
   // lst is an array of strings
+    return lst.length >= 5;
+}
+
+function allLong(lst) {
+  // lst is an array of strings
+    return lst.every(function(word) {
+    return word.length >= 5;
+  });
 }
 
 console.log('Q8 - case 1', allLong(['Scott', 'Bob', 'Ric', 'Jim']));

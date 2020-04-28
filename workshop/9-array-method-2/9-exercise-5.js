@@ -13,6 +13,10 @@
 // greater than 5
 function keepLong(lst) {
   // lst is an array of strings
+  let words = lst.filter(function(arrayWords) {
+    return arrayWords.length > 5;
+  });
+return words;
 }
 
 console.log(

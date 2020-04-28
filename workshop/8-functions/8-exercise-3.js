@@ -4,6 +4,7 @@
 
 function calculateAverage(a, b, c, d, e) {
   // Your code here
+  return Math.round((a + b + c + d + e) / calculateAverage.length);
 }
 
 console.log(calculateAverage(76, 60, 83, 100, 78));

@@ -18,10 +18,28 @@ for (i = 0; i <= 999; i++) {
     let digit = i.toString().split('');
     let sum = 0;
     for (x = 0; x < digit.length; x++) {
-        let num = Number(digit[x]);
+        let num = digit[x];
         sum += num ** 3;
     }
     if (sum === i) {
+        armstrongNumbers.push(i);
+    }
+}
+console.log(armstrongNumbers);
+
+// Other solution
+
+let armstrongNumbers = [];
+
+for (i = 0; i <= 999; i++){
+    let digit = i.toString().split('');
+    let sum = 0;
+
+    digit.forEach(function(number){
+        let digitCubed = number ** digit.length;
+        sum += digitCubed;
+    });
+    if(sum === i){
         armstrongNumbers.push(i);
     }
 }
